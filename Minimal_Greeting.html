@@ -124,7 +124,7 @@ function dispalyGreetings(today){
 
     function dispalyClock(today) {
 
-        var hour = padZeros(twelveHour(today.getHours()));
+        var hour = padZeros(twentyfourHour(today.getHours()));
         var minutes = padZeros(today.getMinutes());
         var seconds = padZeros(today.getSeconds());
        
@@ -140,7 +140,7 @@ function dispalyGreetings(today){
         document.getElementById('sec').innerHTML = seconds;
     }
 
-    function twelveHour(hour) {
+    function twentyfourHour(hour) {
         if (hour > 12) {
             return hour -= 12
         } else if (hour === 0) {
